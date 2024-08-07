@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "razzak",
+      "email": "razzak@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "7210",
+      "name": "dfsdf",
+      "email": "razzak@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "6db0",
+      "name": "razzak",
+      "email": "razzak@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "c91a",
+      "name": "razzak",
+      "email": "razzak@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "c78b",
+      "name": "razzak",
+      "email": "razzak@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "107f",
+      "name": "razzak",
+      "email": "razzak@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "b33f",
+      "name": "",
+      "email": "",
+      "password": ""
+    }
+  ]
+}
