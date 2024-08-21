@@ -1,13 +1,13 @@
 <template>
   <TopHeader />
-  <h1>Home Page</h1>
+  <h1>Update Page</h1>
 </template>
 
 <script>
-import TopHeader from './Header.vue';
+import TopHeader from '../Header.vue';
 
 export default {
-  name: 'HomePage',
+  name: 'UpdateRestaurent',
   components: {
     TopHeader,
   },

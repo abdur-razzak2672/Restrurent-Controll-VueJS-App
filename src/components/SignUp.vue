@@ -1,7 +1,7 @@
 <template>
   <!-- <h2>{{ msg }}</h2> -->
- 
-<div class="container1" id="container">
+ <div class="authBoady">
+	<div class="container1" id="container">
 	<div class="form-container sign-in-container">
 		<div class="form-item">
 			<h3>Create Account</h3>
@@ -34,6 +34,8 @@
 		</div>
 	</div>
 </div>
+ </div>
+
 <!-- s -->
  </template>
  
@@ -66,7 +68,14 @@ export default {
 		console.log(result)
 		if(result?.status==201){
 			localStorage.setItem("userInfo",JSON.stringify(result?.data))
+			this.$router.push({name:"HomePage"})
 		}
+	}
+  },
+  mounted(){
+	const user= localStorage.getItem("userInfo")
+	if(user){
+		this.$router.push({name:"HomePage"})
 	}
   }
 }
