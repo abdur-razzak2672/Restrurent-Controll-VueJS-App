@@ -107,220 +107,224 @@
       "name": "Razzak",
       "email": "razzak@gmail.com",
       "password": "1234"
+    },
+    {
+      "id": "a57d",
+      "name": "nb",
+      "email": "n",
+      "password": "n"
     }
   ],
-
-  "restaurants":[
+  "restaurants": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Sunset Bistro",
       "shortDescription": "A cozy bistro with a stunning sunset view.",
       "location": "123 Beach Ave, Miami, FL",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Mountain View Grill",
       "shortDescription": "Grill with a panoramic view of the mountains.",
       "location": "456 Mountain Rd, Denver, CO",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Urban Eatery",
       "shortDescription": "Modern dining in the heart of the city.",
       "location": "789 Downtown St, New York, NY",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "The Green Leaf",
       "shortDescription": "Farm-to-table dining with organic ingredients.",
       "location": "101 Forest Ln, Portland, OR",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Sea Breeze Café",
       "shortDescription": "Relaxed café with fresh seafood and ocean views.",
       "location": "202 Ocean Dr, Santa Monica, CA",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Rustic Inn",
       "shortDescription": "Traditional American cuisine in a rustic setting.",
       "location": "303 Country Rd, Nashville, TN",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Fusion Fiesta",
       "shortDescription": "A blend of Asian and Mexican flavors.",
       "location": "404 Market St, San Francisco, CA",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Gourmet Haven",
       "shortDescription": "Fine dining with an exquisite menu.",
       "location": "505 Luxury Ln, Beverly Hills, CA",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Coastal Cuisine",
       "shortDescription": "Seafood specialties with a coastal vibe.",
       "location": "606 Seaside Blvd, Key West, FL",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "The Pasta House",
       "shortDescription": "Authentic Italian pasta and more.",
       "location": "707 Little Italy St, Chicago, IL",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Spice Market",
       "shortDescription": "A vibrant experience with international spices.",
       "location": "808 Spice Ln, Houston, TX",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Café Latté",
       "shortDescription": "A chic café with artisan coffee.",
       "location": "909 Coffee St, Seattle, WA",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Blue Lagoon",
       "shortDescription": "Tropical drinks and seafood in a lagoon setting.",
       "location": "1010 Lagoon Dr, Honolulu, HI",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "The Vegan Spot",
       "shortDescription": "Healthy vegan options for everyone.",
       "location": "1111 Green St, Austin, TX",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "Burger Barn",
       "shortDescription": "Classic and gourmet burgers for all tastes.",
       "location": "1212 Main St, Dallas, TX",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "Sushi World",
       "shortDescription": "Fresh sushi and Japanese cuisine.",
       "location": "1313 Sushi Blvd, San Diego, CA",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "Pancake Paradise",
       "shortDescription": "Breakfast all day with a variety of pancakes.",
       "location": "1414 Breakfast Ave, Atlanta, GA",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "The Steakhouse",
       "shortDescription": "Premium steaks cooked to perfection.",
       "location": "1515 Steak St, Kansas City, MO",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "Choco Delight",
       "shortDescription": "Desserts and chocolates from around the world.",
       "location": "1616 Dessert Ln, Hershey, PA",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "Pizza Palooza",
       "shortDescription": "Delicious pizzas with a variety of toppings.",
       "location": "1717 Pizza Rd, New York, NY",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 21,
+      "id": "21",
       "title": "Tex-Mex Fiesta",
       "shortDescription": "Bold Tex-Mex flavors in a lively atmosphere.",
       "location": "1818 Fiesta St, San Antonio, TX",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 22,
+      "id": "22",
       "title": "Bistro Bella",
       "shortDescription": "Italian and Mediterranean cuisine in a cozy setting.",
       "location": "1919 Bistro Ln, Boston, MA",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 23,
+      "id": "23",
       "title": "Tapas Tapas",
       "shortDescription": "A taste of Spain with a variety of tapas.",
       "location": "2020 Tapas Blvd, Miami, FL",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 24,
+      "id": "24",
       "title": "Ramen House",
       "shortDescription": "Warm up with authentic ramen bowls.",
       "location": "2121 Ramen St, Los Angeles, CA",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 25,
+      "id": "25",
       "title": "BBQ Pit",
       "shortDescription": "Southern BBQ with all the fixings.",
       "location": "2222 BBQ Blvd, Memphis, TN",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 26,
+      "id": "26",
       "title": "Crepe Corner",
       "shortDescription": "Sweet and savory crepes made to order.",
       "location": "2323 Crepe Ln, Paris, France",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 27,
+      "id": "27",
       "title": "Taco Town",
       "shortDescription": "Authentic Mexican tacos with a modern twist.",
       "location": "2424 Taco Blvd, Los Angeles, CA",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 28,
+      "id": "28",
       "title": "Bakery Bliss",
       "shortDescription": "Freshly baked bread, pastries, and more.",
       "location": "2525 Bakery Rd, San Francisco, CA",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 29,
+      "id": "29",
       "title": "Deli Delight",
       "shortDescription": "Classic deli sandwiches and salads.",
       "location": "2626 Deli St, Philadelphia, PA",
       "image": "https://via.placeholder.com/150"
     },
     {
-      "id": 30,
+      "id": "30",
       "title": "Smoothie Central",
       "shortDescription": "Healthy and refreshing smoothies.",
       "location": "2727 Smoothie Blvd, Miami, FL",
       "image": "https://via.placeholder.com/150"
     }
   ]
-  
 }
