@@ -1,0 +1,38 @@
+[
+    {
+        "value": 1,
+        "text": "New York"
+    },
+    {
+        "value": 2,
+        "text": "Chicago"
+    },
+    {
+        "value": 3,
+        "text": "San Francisco"
+    },
+    {
+        "value": 4,
+        "text": "Los Angeles"
+    },
+    {
+        "value": 5,
+        "text": "Boston"
+    },
+    {
+        "value": 6,
+        "text": "Washington"
+    },
+    {
+        "value": 7,
+        "text": "Las Vegas"
+    },
+    {
+        "value": 8,
+        "text": "Seattles"
+    },
+    {
+        "value": 9,
+        "text": "San Diego"
+    }
+]

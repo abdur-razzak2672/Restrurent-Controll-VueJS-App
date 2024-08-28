@@ -2,24 +2,188 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="OneUIUX HTML website template by Maxartkiller">
+  <meta name="author" content="Maxartkiller">
+  <title>Restrurent</title>
+
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="../assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="./assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="./assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="mask-icon" href="./assets/img/favicons/safari-pinned-tab.svg" color="#ffffff">
+  <link rel="icon" href="./assets/img/favicons/favicon.ico">
+
+  <!-- Google fonts font icons -->
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!-- Elegant font icons -->
+  <link href="./assets/vendor/elegant_font/HTMLCSS/style.css" rel="stylesheet">
+
+  <!-- Swiper Slider -->
+  <link href="./assets/vendor/swiper/css/swiper.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="./assets/css/style-red.css" rel="stylesheet" id="style">
+
+  <!-- child theme custom style -->
+  <link href="css/custom.css" rel="stylesheet">
+  <!-- <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="favicon.ico">
   
-  <!-- Link to your global CSS file -->
-  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="style.css">
 
-  <!-- Font Awesome CDN link -->
+  Font Awesome CDN link 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> 
 
-  <title>Restaurant</title>
+  <title>Restaurant</title>-->
 </head>
-<body>
+<body class="ui-rounded">
   <div id="app"></div>
+
+
+
+  
+    <!-- Required jquery and libraries -->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/vendor/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- cookie css -->
+    <script src="./assets/vendor/cookie/jquery.cookie.js"></script>
+
+    <!-- Swiper slider  -->
+    <script src="./assets/vendor/swiper/js/swiper.min.js"></script>
+
+    <!-- Counter numbers  -->
+    <script src="./assets/vendor/counternumber/waypoints.min.js"></script>
+    <script src="./assets/vendor/counternumber/jquery.rcounterup.js"></script>
+
+    <!-- Masonry js -->
+    <script src="./assets/vendor/masonry/masonry.pkgd.min.js"></script>
+
+    <!-- autocomplete  js -->
+    <script src="./assets/vendor/autocomplete/bootstrap-autocomplete.min.js"></script>
+
+    <!-- Customized jquery file  -->
+    <script src="./assets/js/main.js"></script>
+    <script src="js/color-scheme-demo.js"></script>
+
+    <script>
+        "use strict"
+        $(document).ready(function() {
+            if (self !== top) {
+                $('.banner-hero').css('height', '750px');
+            }
+            /* swiper slider */
+            var swiper = new Swiper('.slider-vertical', {
+                autoplay: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+            /* swiper slider */
+            var swiper = new Swiper('.multiple', {
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+            });
+
+            /* toast message */
+            setTimeout(function() {
+                $('.toast').toast('show')
+            }, 2000)
+
+            /* address madonry */
+            $('#findmore').on('shown.bs.collapse', function() {
+                $('.grid').masonry({
+                    // use outer width of grid-sizer for columnWidth
+                    columnWidth: '.grid-sizer',
+                    // do not use .grid-sizer in layout
+                    itemSelector: '.grid-item',
+                    percentPosition: true,
+                    gutter: 0
+                });
+            })
+
+
+            $('.basic').autoComplete({
+                resolverSettings: {
+                    url: 'js/input.json'
+                }
+            });
+
+            /* swiper slider */
+            var swiper = new Swiper('.slider-horizontal-arrow', {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+            });
+
+
+            /* select quantity*/
+            var cartcount = $('.cartcount');
+            $('.quantity-remove').on('click', function() {
+                var currentvalue = parseInt($(this).closest('.select-quantity').find('.quantity-number').text());
+                if (currentvalue > '0') {
+                    $(this).closest('.select-quantity').find('.quantity-number').text(currentvalue - 1);
+                }
+
+            });
+            $('.quantity-add').on('click', function() {
+                var currentvalue = parseInt($(this).closest('.select-quantity').find('.quantity-number').text());
+                $(this).closest('.select-quantity').find('.quantity-number').text(currentvalue + 1);
+
+            });
+
+            /* add to cart quantity*/
+            $('.addtocartselect').on('click', function() {
+                var buttonoffsettop = $(this).offset().top - $(window).scrollTop();
+                var buttonoffsetleft = $(this).offset().left - $(window).scrollLeft() + 6;
+                var productvalue = parseInt($(this).find('.quantity-number').text())
+                var addtocartselect = productvalue + parseInt($('.cartcount').text());
+                var imagepath = $(this).closest('.service-block').find('.background img').attr('src');
+
+                var targetoffsettop = $('.cartcount').offset().top - $(window).scrollTop();
+                var targetoffsetleft = $('.cartcount').offset().left - $(window).scrollLeft();
+
+
+                if (parseInt($(this).find('.quantity-number').text()) > 0) {
+                    $(this).text("In Cart");
+                    $(this).closest('.service-block').find('.quantity-remove').attr('disabled', 'disable').css('opacity', '0.2');
+                    $(this).closest('.service-block').find('.quantity-add').attr('disabled', 'disable').css('opacity', '0.2');
+                    $('body').append('<div class="addtocartanimation shadow" style="top:' + targetoffsettop + 'px; left:' + targetoffsetleft + 'px"><img src="' + imagepath + '" alt=""><br><span class="countercartnumber">' + productvalue + '</span></div>')
+
+                    setTimeout(function() {
+                        $('.addtocartanimation').addClass('active').css({
+                            'top': targetoffsettop,
+                            'left': targetoffsetleft
+                        })
+                    }, 100);
+                    setTimeout(function() {
+                        $('.addtocartanimation').removeClass('active').css();
+                    }, 800);
+                    setTimeout(function() {
+                        $('.addtocartanimation').remove();
+                        cartcount.text(addtocartselect);
+                    }, 1500);
+                }
+            });
+
+        });
+
+    </script>
+
+
+
+
   <!-- Add Bootstrap JS and Popper.js at the end of the body -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 </html>
