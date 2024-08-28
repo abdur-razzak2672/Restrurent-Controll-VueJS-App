@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <!-- <div>
     <nav class="navbar navbar-expand-lg px-5 px-0 navbar-light bg-light">
       <div class="container-fluid">
         <router-link class="navbar-brand" to="/">Restrurent</router-link>
@@ -38,7 +38,54 @@
         </div>
       </div>
     </nav>
-  </div>
+  </div> -->
+  <header class="header fixed-top">
+        <nav class="navbar navbar-expand-md">
+            <div>
+                <button class="navbar-toggler btn" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon_menu"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <div class="logo">1<span>UX</span><span>UI</span></div>
+                    <h4 class="logo-text text-uppercase"><span>OneUIUX</span><small>Website design</small></h4>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <a class="navbar-brand mb-4 p-3" href="#">
+                    <div class="logo">1<span>UX</span><span>UI</span></div>
+                    <h4 class="logo-text"><span>OneUIUX</span><small>Website design</small></h4>
+                </a>
+                <ul class="navbar-nav mr-auto ml-md-3">
+                    <li class="nav-item  active">
+                        <a class="nav-link" href="index.html"><span class="icon_house_alt icon mr-2"></span> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html"><span class="icon_book_alt icon mr-2"></span>Order Menu</a>
+                    </li>
+                    <li class="nav-item dropdown multilevel">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="icon_globe icon mr-2"></span>Explore</a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="about.html">About</a>
+                            <a class="dropdown-item" href="howitworks.html">How it works?</a>
+                            <a class="dropdown-item" href="membership.html">Membership</a>
+                            
+                            <a class="dropdown-item" href="helpcenter.html">Help Center</a>
+                            <a class="dropdown-item" href="partnership.html">Partnership</a>
+                            <a class="dropdown-item" href="contactus.html">Contact us</a>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html"><span class="icon_document_alt icon mr-2"></span> Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+
+                <a href="" class="btn btn-link text-default text-uppercase"><span class="icon icon_cart_alt"></span><span class="badge badge-danger ml-2 cartcount">2</span></a>
+                <a href="login.html" class="btn btn-default text-uppercase"><span class="icon icon_profile d-block d-lg-none"></span><span class="d-none d-lg-block">Sign in</span></a>
+            </div>
+        </nav>
+    </header>
 </template>
 
 <script>
